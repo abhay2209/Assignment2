@@ -9,21 +9,21 @@
 
 <div>
     <div>
-        <form method ="POST" action ="/display" id="first">
-    
+        <form method ="POST" action ="/display/:id" id="first">
+
     Name: <input type="text" name="name" placeholder="Enter search name">
-   
+
     <input type ="submit"/>
-    
+
         </form>
     </div>
     <ul>
-      <% rows.forEach((r) => { %> 
+      <% rows.forEach((r) => { %>
         <li><%= r.name %></li>
       <% }); %>
 
       </ul>
-  
+
 </div>
 
 </body>
