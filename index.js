@@ -5,7 +5,7 @@ var app=express();
 const { Pool } = require('pg');
 var pool;
 pool = new Pool({
-  
+
   connectionString: process.env.DATABASE_URL,
   ssl: true
 });
@@ -25,7 +25,7 @@ app.get('/db', async (req, res) => {
     res.send("Error " + err);
   }
 })*/
-
+//hi
   app.use(express.static(path.join(__dirname, 'public')))
   app.set('views', path.join(__dirname, 'views'))
   app.set('view engine', 'ejs')
@@ -34,10 +34,10 @@ app.get('/db', async (req, res) => {
   app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
   app.use(express.urlencoded({extended:false}))
   app.get('/display', (req,res) => {
-    
+
     var getUsersQuery = `SELECT * FROM tokemon;`;
     console.log(getUsersQuery);
-  
+
     pool.query(getUsersQuery, (error, result) => {
       if (error)
         res.end(error);
@@ -45,7 +45,7 @@ app.get('/db', async (req, res) => {
       console.log(result);
       res.render('pages/display', results)
     });
-    
+
   });
 
 app.get('/newTokemon',(req,res) => res.render('pages/newTokemon'))
@@ -127,5 +127,3 @@ app.get('/diplay/:name', (req,res) => {
   var results='hello'
   res.render('pages/enterNew/:name')
 });
-
-
