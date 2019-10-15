@@ -12,7 +12,7 @@ pool = new Pool({
 var http=require('http');
 const bodyParser=require('body-parser');
 //app.use(bodyParser.urlencoded({extended: true}));
-
+/*
 app.get('/db', async (req, res) => {
   try {
     const client = await pool.connect()
@@ -24,7 +24,7 @@ app.get('/db', async (req, res) => {
     console.error(err);
     res.send("Error " + err);
   }
-})
+})*/
 
   app.use(express.static(path.join(__dirname, 'public')))
   app.set('views', path.join(__dirname, 'views'))
@@ -32,7 +32,7 @@ app.get('/db', async (req, res) => {
   app.get('/', (req, res) => res.render('pages/tokemon'))
   app.get('/tokemon', (req, res) => res.render('pages/tokemon'))
   app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
-  app.use(express.urlencoded({extended:true}))
+  app.use(express.urlencoded({extended:false}))
   app.get('/display', (req,res) => {
     
     var getUsersQuery = `SELECT * FROM tokemon;`;
