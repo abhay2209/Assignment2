@@ -30,6 +30,7 @@ app.get('/db', async (req, res) => {
   app.set('views', path.join(__dirname, 'views'))
   app.set('view engine', 'ejs')
   app.get('/', (req, res) => res.render('pages/tokemon'))
+  app.get('/tokemon', (req, res) => res.render('pages/tokemon'))
   app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
   app.use(express.urlencoded({extended:true}))
   app.get('/display', (req,res) => {
