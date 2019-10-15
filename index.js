@@ -12,7 +12,7 @@ pool = new Pool({
 var http=require('http');
 const bodyParser=require('body-parser');
 //app.use(bodyParser.urlencoded({extended: true}));
-/*
+
 app.get('/db', async (req, res) => {
   try {
     const client = await pool.connect()
@@ -24,7 +24,7 @@ app.get('/db', async (req, res) => {
     console.error(err);
     res.send("Error " + err);
   }
-})*/
+})
 //hi
   app.use(express.static(path.join(__dirname, 'public')))
   app.set('views', path.join(__dirname, 'views'))
@@ -123,7 +123,7 @@ console.log("success");
 });
 app.get('/diplay/:name', (req,res) => {
   console.log(req.params.id);
-  var userIDQuery = `SELECT * FROM tokemon WHERE name=${req.body.name}`;
+  var userIDQuery = `SELECT * FROM tokemon WHERE name='${req.body.name}'`;
   var results='hello'
   res.render('pages/enterNew/:name')
 });
