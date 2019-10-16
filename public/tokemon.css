@@ -40,17 +40,20 @@
   text-align: center;
   display:inline-block;
   font-size: 20px;
+  font-weight: bold;
+
     text-decoration: none;
 
 }
+
 #new {
    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left:33%;
+    margin-left:32.9%;
     background-color: rgba(233, 176, 90, 0.9);
     padding-top: 2%;
     padding-bottom: 2%;
-    padding-left: 3.55%;
-    padding-right: 3.55%;
+    padding-left: 3.45%;
+    padding-right: 3.45%;
     text-decoration: none;
     text-align: center;
     display:inline-block;
@@ -101,5 +104,94 @@ td{
     padding: 0.5%;
     width: 5%;
     background-color: rgba(145,242,174,0.9);
+
+}
+#box2{
+  background-color: rgba(208,206,206,0.9);
+  margin-top:7%;
+  margin-left:15%;
+  width:70%;
+  height:60%;
+  position: absolute;;
+}
+#box3{
+  background-color: rgba(208,206,206,0.9);
+  margin-top:7%;
+  margin-left:15%;
+  width:70%;
+  height:40%;
+  position: absolute;;
+}
+#a{
+  color:black;
+  font-weight: bold;
+  margin-left:15%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#b{color:black;
+  font-weight: bold;
+  margin-left:25%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#c{font-weight: bold;
+  margin-left: 5%;
+  color:black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#d{font-weight: bold;
+  margin-left:2%;
+  color:black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#e{font-weight: bold;
+  margin-left:2%;
+  color:black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#f{font-weight: bold;
+  margin-left:2%;
+  color:black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#g{font-weight: bold;
+  color:black;
+  margin-left: 5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#h{font-weight: bold;
+    color:black;
+  margin-left:2%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#i{font-weight: bold;
+  margin-left:2%;
+  color:black;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#j{font-weight: bold;
+  margin-left:2%;
+  color:black;
+font-family: Verdana, Geneva, Tahoma, sans-serif;}
+#last{
+  padding: 3%;
+  background-color: rgba(166,139,240,0.8);
+  margin-left:45%;
+  font-weight: bold;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: none;
+}
+#up{
+  font-weight: bold;
+    margin-left:19%;
+    color:black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+#down{
+  font-weight: bold;
+    margin-left:40%;
+    color:black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
