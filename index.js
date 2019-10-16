@@ -124,6 +124,7 @@ console.log("success");
 app.get('/diplay/:id', (req,res) => {
   console.log(req.params.id);
   var userIDQuery = `SELECT * FROM tokemon WHERE name = '${req.params.id}'`;
-  var results='hello'
-  res.render('pages/display')
+  var results = {'rows': result.rows };
+  console.log(result);
+  res.render('pages/display', results)
 });
