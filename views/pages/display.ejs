@@ -17,12 +17,38 @@
 
         </form>
     </div>
-    <ul>
-      <% rows.forEach((r) => { %>
-        <li><a href="display/<%=r.name%>"><%= r.name %></a> <%= r.trainer %> <%= r.weight %> <%= r.height %> <%= r.fly %> <%= r.fight %> <%= r.fire %> <%= r.water %> <%= r.electric %> <%= r.frozen %> <%= r.total %></li>
-      <% }); %>
+  <table>
+    <tr>
+      <th>Tokemon Name</th>
+      <th>Trainer Name</th>
+      <th>Weight</th>
+      <th>Height</th>
+      <th>Fly</th>
+      <th>Fight</th>
+      <th>Fire</th>
+      <th>Water</th>
+      <th>Electric</th>
+      <th>Frozen</th>
+      <th>Total</th>
+      </tr>
 
-      </ul>
+      <% rows.forEach((r) => { %>
+        <tr>
+        <td><a href="display/<%=r.name%>"> <%= r.name %></a> </td>
+        <td> <%= r.trainer %></td>
+        <td> <%= r.weight %></td>
+        <td> <%= r.height %></td>
+        <td> <%= r.fly %></td>
+        <td> <%= r.fight %></td>
+        <td> <%= r.fire %></td>
+        <td> <%= r.water %></td>
+        <td> <%= r.electric %></td>
+        <td> <%= r.frozen %> </td>
+        <td><%= r.total %></td>
+
+    </tr>  <% }); %>
+</table>
+
 
 </div>
 
