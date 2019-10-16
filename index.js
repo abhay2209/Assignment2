@@ -72,7 +72,7 @@ console.log(total);
   console.log(name);
 
   res.writeHead(250,{"Content-type":"text/plain"});
-  res.write('Added Tokemon');
+  res.write('Added Tokemon, press back to continue.');
   res.end();
 });
 
@@ -100,7 +100,7 @@ console.log(total);
   console.log(name);
 
   res.writeHead(250,{"Content-type":"text/plain"});
-  res.write('Updated Tokemon');
+  res.write('Updated Tokemon, press back to continue.');
   res.end();
 });
 app.get('/deleteTokemon',(req,res) => res.render('pages/deleteTokemon'))
@@ -112,13 +112,13 @@ app.post('/deleteTokemon',(req,res)=>{
   pool.query(myQuery,function(err,result){
     if(err)
 throw err;
-console.log("success");
+console.log("Tokemon deleted, Press back to continue.");
   });
 
   console.log(name);
 
   res.writeHead(250,{"Content-type":"text/plain"});
-  res.write('deleted Tokemon');
+  res.write('Tokemon deleted, Press back to continue.');
   res.end();
 });
 app.get('/display/:id', (req,res) => {
