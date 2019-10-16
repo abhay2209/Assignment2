@@ -121,7 +121,7 @@ console.log("success");
   res.write('deleted Tokemon');
   res.end();
 });
-app.get('/diplay/:id', (req,res) => {
+app.get('/display/:id', (req,res) => {
   console.log(req.params.id);
   var userIDQuery = `SELECT * FROM tokemon WHERE name = '${req.params.id}'`;
   var results = {'rows': result.rows };
