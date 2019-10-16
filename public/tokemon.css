@@ -41,7 +41,7 @@
   display:inline-block;
   font-size: 20px;
   font-weight: bold;
-position:absolute;
+position: fixed;
     text-decoration: none;
 
 }
@@ -111,7 +111,7 @@ td{
   margin-top:7%;
   margin-left:15%;
   width:70%;
-  height:60%;
+  height:55%;
   position: absolute;;
 }
 #box3{
