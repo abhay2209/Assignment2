@@ -123,8 +123,14 @@ console.log("success");
 });
 app.get('/display/:id', (req,res) => {
   console.log(req.params.id);
-  var userIDQuery = `SELECT * FROM tokemon WHERE name = '${req.params.id}'`;
-  var results = {'rows': result.rows };
-  console.log(result);
-  res.render('pages/display', results)
+  var getUsersQuery = `SELECT * FROM tokemon WHERE name = '${req.params.id}'`;
+
+  console.log(getUsersQuery);
+
+  pool.query(getUsersQuery, (error, result) => {
+    if (error)
+      res.end(error);
+    var results = {'rows': result.rows };
+    console.log(result);
+    res.render('pages/display', results)
 });
