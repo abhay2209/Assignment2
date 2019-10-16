@@ -23,7 +23,21 @@
     text-align: center;
     display:inline-block;
     font-size: 20px;
-    
+
+
+}
+#home{
+  margin-top: 40%;
+  margin-left:45%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(226, 69, 69,0.9);
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+  text-align: center;
+  display:inline-block;
+  font-size: 20px;
 
 }
 #new {
@@ -41,7 +55,7 @@
 
 }
 #list {
-    
+
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgba(122, 236, 146, 0.9);
     padding-top: 2%;
@@ -54,4 +68,31 @@
 }
 body{
 background-size: cover;
+}
+table, th, td
+{
+
+   margin-block:3%;
+    border: 1px solid grey;}
+table
+{
+  margin-top: 5%;
+    position: absolute;
+border-spacing: 1cm;
+border-collapse: collapse;
+margin-left: 3%;
+
+width:95%;
+}
+th{
+    background-color: rgba(247,142,142);
+width: 0.5%;
+padding: 0.5%;
+padding-left: 0.5%;
+text-align: left;
+}
+td{
+    padding: 0.5%;
+    width: 5%;
+
 }
