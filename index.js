@@ -71,8 +71,8 @@ console.log("success");
 console.log(total);
   console.log(name);
 
-  res.writeHead(250,{"Content-type":"text/plain"});
-  res.write('Added Tokemon, press back to continue.');
+  res.writeHead(500,{"Content-type":"text/plain"});
+  res.write('Added Tokemon press back to continue.');
   res.end();
 });
 
