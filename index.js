@@ -134,3 +134,4 @@ app.get('/display/:id', (req,res) => {
     console.log(result);
     res.render('pages/display', results)
 });
+});
