@@ -10,6 +10,7 @@
 <div>
 
   <table >
+
     <tr>
       <th>Tokemon Name</th>
       <th>Trainer Name</th>
@@ -26,7 +27,7 @@
 
       <% rows.forEach((r) => { %>
         <tr>
-        <td><a href="display/<%=r.name%>"> <%= r.name %></a> </td>
+        <td><a href="https://tokedex.herokuapp.com/display/<%=r.name%>"> <%= r.name %></a> </td>
         <td> <%= r.trainer %></td>
         <td> <%= r.weight %></td>
         <td> <%= r.height %></td>
@@ -39,6 +40,7 @@
         <td><%= r.total %></td>
 
     </tr>  <% }); %>
+  </strong>
 </table>
 
 <a id="home" href="https://tokedex.herokuapp.com/">HOME</a>

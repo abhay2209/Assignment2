@@ -10,6 +10,7 @@
     display:inline-block;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-decoration: none;
 
 }
 #update {
@@ -23,6 +24,7 @@
     text-align: center;
     display:inline-block;
     font-size: 20px;
+      text-decoration: none;
 
 
 }
@@ -38,6 +40,7 @@
   text-align: center;
   display:inline-block;
   font-size: 20px;
+    text-decoration: none;
 
 }
 #new {
@@ -65,6 +68,7 @@
     text-align: center;
     display:inline-block;
     font-size: 20px;
+      text-decoration: none;
 }
 body{
 background-size: cover;
@@ -85,6 +89,7 @@ margin-left: 3%;
 width:95%;
 }
 th{
+  font-weight: bold;
     background-color: rgba(247,142,142);
 width: 0.5%;
 padding: 0.5%;
@@ -92,7 +97,9 @@ padding-left: 0.5%;
 text-align: left;
 }
 td{
+  font-weight:bold;
     padding: 0.5%;
     width: 5%;
+    background-color: rgba(145,242,174,0.9);
 
 }
